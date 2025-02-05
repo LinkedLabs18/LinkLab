@@ -40,3 +40,46 @@ This project is a static website that provides detailed blogs about popular tech
 ## How to Use
 
 1. Clone the repository:
+   git clone <repository-url>
+2. Open the project in your code editor.
+3. Preview the website by opening any HTML file in your browser.
+4. Deploy to Netlify for public access:
+- Drag and drop the repository folder to Netlify.
+- Update the site's domain and configuration as needed.
+
+---
+
+## Deployment
+
+This project is hosted on **Netlify**, providing a free and reliable platform for static websites. Deployment steps:
+1. Log in to Netlify.
+2. Drag and drop the project folder.
+3. Confirm the deployment URL.
+
+---
+
+## SEO and Analytics
+
+- JSON-LD structured data is implemented to make the website SEO-friendly.
+- Use tools like Google Analytics to monitor traffic and link performance.
+
+---
+
+## Future Improvements
+
+- Add interactive features using JavaScript.
+- Include more product categories and reviews.
+- Implement a blog subscription feature.
+
+---
+
+## Legal Disclosure
+
+LinkLab is an independent entity and is not affiliated with any companies sharing a similar name. The website adheres to Amazon's Affiliate Program requirements and includes necessary disclosures.
+
+---
+
+## License
+
+&copy; 2025 LinkLab. All rights reserved.
+
