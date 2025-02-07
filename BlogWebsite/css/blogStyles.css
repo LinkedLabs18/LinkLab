@@ -78,3 +78,11 @@ img {
     height: auto;
     border-radius: 8px;
 }
+
+.post-date {
+  font-size: 0.9em;
+  color: #555;
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
