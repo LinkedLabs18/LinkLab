@@ -1,50 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About - AeroLabs</title>
-    <link rel="stylesheet" href="css/styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About - AeroLabs</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+    /* Extra styles for dropdown to match theme */
+    #doc-selector {
+      background: #16161a;
+      color: #e4e6eb;
+      border: 1px solid #2a2a2f;
+      border-radius: 8px;
+      padding: 0.5rem 1rem;
+      font-size: 1rem;
+      margin: 1rem 0;
+      width: 100%;
+      max-width: 400px;
+    }
+    #doc-selector option {
+      background: #16161a;
+      color: #e4e6eb;
+    }
+    iframe {
+      width: 100%;
+      height: 600px;
+      border: none;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+      margin-top: 1rem;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>AeroLabs</h1>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-        </nav>
-    </header>
+  <header>
+    <h1>AeroLabs</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+    </nav>
+  </header>
 
-    <main>
-        <!-- Intro section like Home page -->
-        <section id="intro">
-            <h2>About AeroLabs</h2>
-            <p>research on things</p>
-        </section>
+  <main>
+    <section id="intro">
+      <h2>About AeroLabs</h2>
+      <p>Discover more about AeroLabs, our mission, and explore our featured documents.</p>
+    </section>
 
-        <!-- Mission section -->
-        <section class="section-block">
-            <h3>Nothing here yet...</h3>
-        </section>
+    <section class="section-block">
+      <h3>Select a Document</h3>
+      <select id="doc-selector" onchange="loadDoc()">
+        <option value="">--Choose a document--</option>
+        <option value="doc1">Our Mission Statement</option>
+        <option value="doc2">Project Roadmap</option>
+        <option value="doc3">Team Overview</option>
+      </select>
 
-        <!-- Coming soon section -->
-        <section class="section-block">
-            <h3>What’s Coming</h3>
-            <p>This page is a work in progress!</p>
-        </section>
+      <div id="doc-content">
+        <!-- Google Doc will load here -->
+      </div>
+    </section>
 
-        <!-- Disclaimers -->
-        <section class="section-block">
-            <h3>Disclaimers</h3>
-            <ul>
-                <li>AeroLabs is an independent entity and is not affiliated with other companies or organizations mentioned on this site. All trademarks, logos, and brand names are the property of their respective owners.</li>
-            </ul>
-        </section>
-    </main>
+    <section class="section-block">
+      <h3>Disclaimers</h3>
+      <ul>
+        <li>AeroLabs is an independent entity and is not affiliated with other companies or organizations mentioned on this site. All trademarks, logos, and brand names are the property of their respective owners.</li>
+        <li>This site contains affiliate links. If you click a link and make a purchase, we may earn a small commission at no extra cost to you.</li>
+      </ul>
+    </section>
+  </main>
 
-    <footer>
-        <p>&copy; 2025 AeroLabs. All rights reserved.</p>
-    </footer>
+  <footer>
+    <p>&copy; 2025 AeroLabs. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function loadDoc() {
+      const selector = document.getElementById('doc-selector').value;
+      const container = document.getElementById('doc-content');
+
+      let iframeHTML = '';
+
+      if (selector === 'doc1') {
+        iframeHTML = `<iframe src="https://docs.google.com/document/d/e/2PACX-1vRFIyHMCJcoc79MuDrTp5xEQ2RF6bJMDOQ8RbxKDDbvgLiUMFbzcWiWtBFnHHfQDcZ7Fmi0YUvFpYWH/pub?embedded=true"></iframe>`;
+      } else if (selector === 'doc2') {
+        iframeHTML = `<iframe src="https://docs.google.com/document/d/e/2PACX-1vSDNerXjM8FXAb-yPz4M3qlTuAJFRQSFMxs5eiv08SL7CIbj9WMBsU3vDiEbkLM-86KriK-xutC3Hqb/pub?embedded=true"></iframe>`;
+      } 
+        else {
+        iframeHTML = '';
+      }
+
+      container.innerHTML = iframeHTML;
+    }
+  </script>
 </body>
 </html>
-
