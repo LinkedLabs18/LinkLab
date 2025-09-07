@@ -125,3 +125,24 @@ footer a {
 footer a:hover {
   color: #1ed1ff;
 }
+
+.section-block {
+    background: #16161a; /* same as blog cards */
+    padding: 1.5rem 2rem;
+    border-radius: 12px;
+    margin: 1.5rem auto;
+    max-width: 800px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+}
+
+.section-block h2, .section-block h3 {
+    color: #00c6ff;
+    margin-bottom: 0.5rem;
+}
+
+.section-block p, .section-block li {
+    color: #cfcfcf;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
