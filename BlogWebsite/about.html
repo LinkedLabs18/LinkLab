@@ -23,6 +23,21 @@
       background: #16161a;
       color: #e4e6eb;
     }
+    #doc-selector1 {
+      background: #16161a;
+      color: #e4e6eb;
+      border: 1px solid #2a2a2f;
+      border-radius: 8px;
+      padding: 0.5rem 1rem;
+      font-size: 1rem;
+      margin: 1rem 0;
+      width: 100%;
+      max-width: 400px;
+    }
+    #doc-selector1 option {
+      background: #16161a;
+      color: #e4e6eb;
+    }
     iframe {
       width: 100%;
       height: 600px;
@@ -109,7 +124,7 @@
   </script>
  <script>
     function loadDoc1() {
-      const selector = document.getElementById('doc-selector').value;
+      const selector = document.getElementById('doc-selector1').value;
       const container = document.getElementById('doc-content1');
 
       let iframeHTML = '';
@@ -127,6 +142,7 @@
   
 </body>
 </html>
+
 
 
 
