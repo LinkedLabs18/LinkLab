@@ -49,12 +49,24 @@
     </section>
 
     <section class="section-block">
-      <h3>Select a Document</h3>
+      <h3>Outcome Reflections</h3>
       <select id="doc-selector" onchange="loadDoc()">
         <option value="">--Choose a document--</option>
         <option value="doc1">eportfolio check-in 1</option>
-        <option value="doc2">test doc 2</option>
-        <option value="doc3">empty</option>
+        <option value="doc2">eportfolio check-in 2</option>
+      </select>
+
+      <div id="doc-content">
+        <!-- Google Doc will load here -->
+      </div>
+    </section>
+
+    <section class="section-block">
+      <h3>assignments supporting reflections</h3>
+      <select id="doc-selector" onchange="loadDoc()">
+        <option value="">--Choose a document--</option>
+        <option value="doc3">Reading Response and Discussion: Researching my genre and refined research questions</option>
+        <option value="doc4">Genre analysis and potential research questions</option>
       </select>
 
       <div id="doc-content">
@@ -84,17 +96,20 @@
       if (selector === 'doc1') {
         iframeHTML = `<iframe src="https://docs.google.com/document/d/e/2PACX-1vSFqfIQIA11I9Hdv5YhAXU_7IacNnUhdVO3czzXN_vUZ1B7LG-_Cftefd_53QwMfbYgv_ZGYuWee4WL/pub?embedded=true"></iframe>`;
       } else if (selector === 'doc2') {
-        iframeHTML = `<iframe src="https://docs.google.com/document/d/e/2PACX-1vSDNerXjM8FXAb-yPz4M3qlTuAJFRQSFMxs5eiv08SL7CIbj9WMBsU3vDiEbkLM-86KriK-xutC3Hqb/pub?embedded=true"></iframe>`;
-      } 
-        else {
+        iframeHTML = `<iframe src="https://docs.google.com/document/d/e/2PACX-1vQ9YL5yW_Df31IyGWU312CEzWJgbw4PdhO0ktk6watvbuzxg9nHRbOq-Wh7O519NjL7hlVLbdycmi5b/pub?embedded=true"></iframe>`;
+      } else if (selector === 'doc3'){
+        iframeHTML = '<iframe src="https://docs.google.com/document/d/e/2PACX-1vRlhxO_tJzuSbiDdIslaspfdd5MwPzTj-Mlhu9-EpwpPnu8wKRJURAIXwXEkDmeT1uMPVj5r2sGmmmD/pub?embedded=true"></iframe>';
+      } else if (selector === 'doc4'){
+        iframeHTML = '<iframe src="https://docs.google.com/document/d/e/2PACX-1vRNxjdzKPpc0QWY3PkY4D1skSnr-GtdIkLbuY14-DiTyU9HVEos_enRF8gBJRjILDKpySx1tlDIIXmJ/pub?embedded=true"></iframe>';
+      } else {
         iframeHTML = '';
       }
-
       container.innerHTML = iframeHTML;
     }
   </script>
 </body>
 </html>
+
 
 
 
