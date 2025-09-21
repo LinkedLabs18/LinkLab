@@ -63,13 +63,13 @@
 
     <section class="section-block">
       <h3>assignments supporting reflections</h3>
-      <select id="doc-selector" onchange="loadDoc()">
+      <select id="doc-selector1" onchange="loadDoc()">
         <option value="">--Choose a document--</option>
         <option value="doc3">Reading Response and Discussion: Researching my genre and refined research questions</option>
         <option value="doc4">Genre analysis and potential research questions</option>
       </select>
 
-      <div id="doc-content">
+      <div id="doc-content1">
         <!-- Google Doc will load here -->
       </div>
     </section>
@@ -107,8 +107,27 @@
       container.innerHTML = iframeHTML;
     }
   </script>
+ <script>
+    function loadDoc() {
+      const selector = document.getElementById('doc-selector1').value;
+      const container = document.getElementById('doc-content1');
+
+      let iframeHTML = '';
+
+      if (selector === 'doc3'){
+        iframeHTML = '<iframe src="https://docs.google.com/document/d/e/2PACX-1vRlhxO_tJzuSbiDdIslaspfdd5MwPzTj-Mlhu9-EpwpPnu8wKRJURAIXwXEkDmeT1uMPVj5r2sGmmmD/pub?embedded=true"></iframe>';
+      } else if (selector === 'doc4'){
+        iframeHTML = '<iframe src="https://docs.google.com/document/d/e/2PACX-1vRNxjdzKPpc0QWY3PkY4D1skSnr-GtdIkLbuY14-DiTyU9HVEos_enRF8gBJRjILDKpySx1tlDIIXmJ/pub?embedded=true"></iframe>';
+      } else {
+        iframeHTML = '';
+      }
+      container.innerHTML = iframeHTML;
+    }
+  </script>
+  
 </body>
 </html>
+
 
 
 
