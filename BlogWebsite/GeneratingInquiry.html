@@ -1,1 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Course Outcomes - AeroLabs</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+    /* Extra styles for dropdown to match theme */
+    #doc-selector {
+      background: #16161a;
+      color: #e4e6eb;
+      border: 1px solid #2a2a2f;
+      border-radius: 8px;
+      padding: 0.5rem 1rem;
+      font-size: 1rem;
+      margin: 1rem 0;
+      width: 100%;
+      max-width: 400px;
+    }
+    #doc-selector option {
+      background: #16161a;
+      color: #e4e6eb;
+    }
+    #doc-selector1 {
+      background: #16161a;
+      color: #e4e6eb;
+      border: 1px solid #2a2a2f;
+      border-radius: 8px;
+      padding: 0.5rem 1rem;
+      font-size: 1rem;
+      margin: 1rem 0;
+      width: 100%;
+      max-width: 400px;
+    }
+    #doc-selector1 option {
+      background: #16161a;
+      color: #e4e6eb;
+    }
+    iframe {
+      width: 100%;
+      height: 600px;
+      border: none;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+      margin-top: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>AeroLabs</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="outcomeRefl.html">Course Outcome Reflections</a>
+      <a href="GeneratingInquiry.html">Generating Inquiry</a>
+      <a href="outcomeRefl.html">Multiple ways of writing</a>
+      <a href="outcomeRefl.html">Information Literacy</a>
+      <a href="outcomeRefl.html">Research Genre Production</a>
+      <a href="outcomeRefl.html">Contributing Knowledge</a>
+      <a href="outcomeRefl.html">Revision</a>
+    </nav>
+  </header>
+  <main>
+  
+    <section id="intro">
+      <h2>AeroLabs</h2>
+      <p>Discover more about AeroLabs</p>
+    </section>
+
+  <!-- add paragraph here -->
+
+    <section class="section-block">
+      <h3>assignments supporting Generating Inquiry</h3>
+      <select id="doc-selector1" onchange="loadDoc1()">
+        <option value="">--Choose a document--</option>
+        <option value="doc7">Major Assignment 1: Annotated Bibliography and Literature Review</option>
+        <option value="doc8">Research Proposal</option>
+      </select>
+
+      <div id="doc-content1">
+        <!-- Google Doc will load here -->
+      </div>
+    </section>
+
+    <section class="section-block">
+      <h3>Disclaimers</h3>
+      <ul>
+        <li>AeroLabs is an independent entity and is not affiliated with other companies or organizations mentioned on this site. All trademarks, logos, and brand names are the property of their respective owners.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 AeroLabs. All rights reserved.</p>
+  </footer>
+
+ <script>
+    function loadDoc1() {
+      const selector = document.getElementById('doc-selector1').value;
+      const container = document.getElementById('doc-content1');
+
+      let iframeHTML = '';
+
+      if (selector === 'doc5'){
+        iframeHTML = '<iframe src="https://docs.google.com/document/d/e/2PACX-1vRlhxO_tJzuSbiDdIslaspfdd5MwPzTj-Mlhu9-EpwpPnu8wKRJURAIXwXEkDmeT1uMPVj5r2sGmmmD/pub?embedded=true"></iframe>';
+      } else if (selector === 'doc6'){
+        iframeHTML = '<iframe src="https://docs.google.com/document/d/e/2PACX-1vRNxjdzKPpc0QWY3PkY4D1skSnr-GtdIkLbuY14-DiTyU9HVEos_enRF8gBJRjILDKpySx1tlDIIXmJ/pub?embedded=true"></iframe>';
+      } else if (selector === 'doc7'){
+        iframeHTML = '<iframe src="https://docs.google.com/document/d/e/2PACX-1vRTmKSX37zUJHmrxYlvJs84npQQ_-94K4V2fHGdPXPHxaEJHDrysD45CUMFdqbr29NZnCWD1x0cSzv-/pub?embedded=true"></iframe>';
+      } else if (selector === 'doc8'){
+        iframeHTML = '<iframe src="https://docs.google.com/document/d/e/2PACX-1vSd4Rllg0Hs0UBldXv7CtGZ8OjnF0eN-FotbDlg0s2NHo-IPICVz1oDV3bFFEOKOCO85BGk5haByNGR/pub?embedded=true"></iframe>';
+      } else if (selector === 'doc9'){
+        iframeHTML = '<iframe src="https://docs.google.com/document/d/e/2PACX-1vTJpeEXSld3ZzvnK98yCYHuvTcIL4IYFS2CxK2MjZWkqOTsRC-_t4eETGF4kQ4_8GG263G4hkItFnO0/pub?embedded=true"></iframe>';
+      } else if (selector === 'doc10'){
+        iframeHTML = '<iframe src="https://docs.google.com/document/d/e/2PACX-1vS3fYwNchFX8qqRfy-q2QA7zAXYckJGdqhRaj0HV-UmWwP38VJsDEZz1jLZI8hth2YWI1dJuKx0KnmU/pub?embedded=true"></iframe>';
+      } else if (selector === 'doc11'){
+        iframeHTML = '<iframe src="https://docs.google.com/document/d/e/2PACX-1vQWG7l63tNGmFlANzuD4wSMMBSJq7dtzRKhpk0_ezcgY297-tPX9YqTh4r0h8O7cI9nFNHEymdjsg6I/pub?embedded=true"></iframe>';
+      }else if (selector === 'doc12'){
+        iframeHTML = '<iframe src="https://docs.google.com/document/d/e/2PACX-1vSpW0APhMlwyko-ild4FcQopZyZ_eHE85j5ixkpHTsTWeM-71tsnQLr6LWEp04Rq4UKpxR9moq4a1tg/pub?embedded=true"></iframe>';
+      } else {
+        iframeHTML = '';
+      }
+      container.innerHTML = iframeHTML;
+    }
+  </script>
+  
+</body>
+</html>
 
