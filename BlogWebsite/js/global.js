@@ -22,6 +22,8 @@
         iframeHTML = '<iframe src="https://docs.google.com/document/d/e/2PACX-1vSpW0APhMlwyko-ild4FcQopZyZ_eHE85j5ixkpHTsTWeM-71tsnQLr6LWEp04Rq4UKpxR9moq4a1tg/pub?embedded=true"></iframe>';
       }else if (selector === 'doc13'){
         iframeHTML = '<iframe src="https://docs.google.com/document/d/e/2PACX-1vTz-Wjx7QYnBijzbWRJqHoCVbOd9wnZA-PsmLeZFYNwJmJkdO8utXe4ZFhEHONC9gKWHtuYTg9uj2n2/pub?embedded=true"></iframe>';
+      }else if (selector === 'doc14'){
+        iframeHTML = '<iframe src="https://docs.google.com/document/d/e/2PACX-1vRFlLIrZEf8kHRe7niBuhqfBCWkC1tE6O9dpYhQU21J13QyinWTTbZryS_5XQntitde8nWNDpl3ZjUX/pub?embedded=true"></iframe>';
       }else {
         iframeHTML = '';
       }
