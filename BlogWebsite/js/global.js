@@ -20,7 +20,9 @@
         iframeHTML = '<iframe src="https://docs.google.com/document/d/e/2PACX-1vQWG7l63tNGmFlANzuD4wSMMBSJq7dtzRKhpk0_ezcgY297-tPX9YqTh4r0h8O7cI9nFNHEymdjsg6I/pub?embedded=true"></iframe>';
       }else if (selector === 'doc12'){
         iframeHTML = '<iframe src="https://docs.google.com/document/d/e/2PACX-1vSpW0APhMlwyko-ild4FcQopZyZ_eHE85j5ixkpHTsTWeM-71tsnQLr6LWEp04Rq4UKpxR9moq4a1tg/pub?embedded=true"></iframe>';
-      } else {
+      }else if (selector === 'doc13'){
+        iframeHTML = '<iframe src="https://docs.google.com/document/d/e/2PACX-1vTz-Wjx7QYnBijzbWRJqHoCVbOd9wnZA-PsmLeZFYNwJmJkdO8utXe4ZFhEHONC9gKWHtuYTg9uj2n2/pub?embedded=true"></iframe>';
+      }else {
         iframeHTML = '';
       }
       container.innerHTML = iframeHTML;
