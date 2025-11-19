@@ -1,4 +1,3 @@
-<script>
 document.addEventListener("DOMContentLoaded", () => {
     const fadeEls = document.querySelectorAll(".fade-in");
     
@@ -13,4 +12,3 @@ document.addEventListener("DOMContentLoaded", () => {
 
     fadeEls.forEach(el => observer.observe(el));
 });
-</script>
