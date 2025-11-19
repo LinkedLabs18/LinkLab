@@ -195,7 +195,7 @@ footer a:hover {
 }
 
 .iframe-wrapper iframe {
-  min-width: 1200px; /* adjust as needed */
+  min-width: 12000px; /* adjust as needed */
   width: 100%;
   height: 600px;
   border: none;
