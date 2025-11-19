@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Course Outcomes - AeroLabs</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+    /* Extra styles for dropdown to match theme */
+    #doc-selector {
+      background: #16161a;
+      color: #e4e6eb;
+      border: 1px solid #2a2a2f;
+      border-radius: 8px;
+      padding: 0.5rem 1rem;
+      font-size: 1rem;
+      margin: 1rem 0;
+      width: 100%;
+      max-width: 400px;
+    }
+    #doc-selector option {
+      background: #16161a;
+      color: #e4e6eb;
+    }
+    #doc-selector1 {
+      background: #16161a;
+      color: #e4e6eb;
+      border: 1px solid #2a2a2f;
+      border-radius: 8px;
+      padding: 0.5rem 1rem;
+      font-size: 1rem;
+      margin: 1rem 0;
+      width: 100%;
+      max-width: 400px;
+    }
+    #doc-selector1 option {
+      background: #16161a;
+      color: #e4e6eb;
+    }
+    iframe {
+      width: 100%;
+      height: 600px;
+      border: none;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+      margin-top: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>AeroLabs</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="outcomeRefl.html">Course Outcome Reflections</a>
+      <a href="GeneratingInquiry.html">Generating Inquiry</a>
+      <a href="mulWaysWrite.html">Multiple ways of writing</a>
+      <a href="infoLit.html">Information Literacy</a>
+      <a href="researchGenreProd.html">Research Genre Production</a>
+      <a href="contributingKnowledge.html">Contributing Knowledge</a>
+      <a href="revision.html">Revision</a>
+    </nav>
+  </header>
+  <main>
+  
+    <section id="intro">
+      <h2>AeroLabs</h2>
+      <p>Discover more about AeroLabs</p>
+    </section>
+
+    <section class="section-block">
+      <h3>Outcome Reflections</h3>
+      <select id="doc-selector" onchange="loadDoc()">
+        <option value="">--Choose a document--</option>
+        <option value="doc1">eportfolio check-in 1</option>
+        <option value="doc2">eportfolio check-in 2</option>
+        <option value="doc3">eportfolio check-in 3</option>
+        <option value="doc4">eportfolio check-in 4</option>
+      </select>
+
+      <div id="doc-content">
+        <!-- Google Doc will load here -->
+      </div>
+    </section>
+
+    <section class="section-block">
+      <h3>assignments supporting reflections</h3>
+      <select id="doc-selector1" onchange="loadDoc1()">
+        <option value="">--Choose a document--</option>
+        <option value="doc5">Reading Response and Discussion: Researching my genre and refined research questions</option>
+        <option value="doc6">Genre analysis and potential research questions</option>
+        <option value="doc7">Major Assignment 1: Annotated Bibliography and Literature Review</option>
+        <option value="doc8">Research Proposal</option>
+        <option value="doc9">Coding Reflection and Generating Claims</option>
+        <option value="doc10">Synthesis Matrix</option>
+        <option value="doc11">Research Paper Outline</option>
+        <option value="doc12">ePortfolio Check in 4</option>
+      </select>
+
+      <div id="doc-content1">
+        <!-- Google Doc will load here -->
+      </div>
+    </section>
+
+    <section class="section-block">
+      <h3>Disclaimers</h3>
+      <ul>
+        <li>AeroLabs is an independent entity and is not affiliated with other companies or organizations mentioned on this site. All trademarks, logos, and brand names are the property of their respective owners.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 AeroLabs. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function loadDoc() {
+      const selector = document.getElementById('doc-selector').value;
+      const container = document.getElementById('doc-content');
+
+      let iframeHTML = '';
+
+      if (selector === 'doc1') {
+        iframeHTML = `<iframe src="https://docs.google.com/document/d/e/2PACX-1vSFqfIQIA11I9Hdv5YhAXU_7IacNnUhdVO3czzXN_vUZ1B7LG-_Cftefd_53QwMfbYgv_ZGYuWee4WL/pub?embedded=true"></iframe>`;
+      } else if (selector === 'doc2') {
+        iframeHTML = `<iframe src="https://docs.google.com/document/d/e/2PACX-1vQ9YL5yW_Df31IyGWU312CEzWJgbw4PdhO0ktk6watvbuzxg9nHRbOq-Wh7O519NjL7hlVLbdycmi5b/pub?embedded=true"></iframe>`;
+      } else if (selector === 'doc3') {
+        iframeHTML = '<iframe src="https://docs.google.com/document/d/e/2PACX-1vTuP0mqfoCnwaA8poAOXnFfIssW0EcoAmzB1DBGrAZj3OrA0GbUHyuAsClGA_PlwecpTMwKZwOQYowp/pub?embedded=true"></iframe>';
+      } else if (selector === 'doc4') {
+        iframeHTML = `<iframe src="https://docs.google.com/document/d/e/2PACX-1vSpW0APhMlwyko-ild4FcQopZyZ_eHE85j5ixkpHTsTWeM-71tsnQLr6LWEp04Rq4UKpxR9moq4a1tg/pub?embedded=true"></iframe>`;
+      } else {
+        iframeHTML = '';
+      }
+      container.innerHTML = iframeHTML;
+    }
+  </script>
+<script src="/js/global.js"></script>
+  <script>
+    loadDoc1();
+  </script>
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
